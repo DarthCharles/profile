@@ -1,0 +1,45 @@
+body {
+    background-color: #000000 !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: #888888 !important;
+    margin: 0 !important;
+
+}
+
+h1 {
+
+}
+
+h1, h2, h3 {
+    color: white !important;
+    font-weight: 900 !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0 !important;
+}
+
+hr {
+    border-top: 1px solid rebeccapurple !important;
+}
+
+#___gatsby {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    color: rebeccapurple !important;
+}
