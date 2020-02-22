@@ -24,24 +24,27 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="d-flex flex-column">
-      <div className="d-flex flex-row" style={{ padding: "50px 130px" }}>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          className="d-flex flex-column"
-          style={{
-            backgroundColor: "#1c1e1f",
-          }}
-        >
-          <main style={{ flex: 1 }}>{children}</main>
+    <div className="row">
+      <div className="d-flex flex-column">
+        <div className="main">
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div
+            className="d-flex flex-column"
+            style={{
+              backgroundColor: "#1c1e1f",
+            }}
+          >
+            <main style={{ flex: 1 }}>{children}</main>
+          </div>
         </div>
+        <footer style={{ textAlign: "center" }}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
       </div>
-      <footer style={{ textAlign: "center" }}>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
+
   )
 }
 

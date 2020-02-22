@@ -11,19 +11,18 @@ import {
 const Header = () => (
   <header>
     <div
-      className="d-flex flex-column"
+      className="d-flex flex-row flex-md-column justify-content-around p-4"
       style={{
         color: "#fff",
         margin: `0 auto`,
-        maxWidth: 80,
         backgroundColor: "#1c1e1f",
-        padding: "17px 20px",
+        height: "100%",
       }}
     >
-      <FontAwesomeIcon className="my-5 active" icon={faUserAlt} />
-      <FontAwesomeIcon className="my-5" icon={faIdCard} />
-      <FontAwesomeIcon className="my-5" icon={faPenSquare} />
-      <FontAwesomeIcon className="my-5" icon={faGlasses} />
+      <FontAwesomeIcon className="my-md-4 active" icon={faUserAlt} />
+      <FontAwesomeIcon className="my-md-4" icon={faIdCard} />
+      <FontAwesomeIcon className="my-md-4" icon={faPenSquare} />
+      <FontAwesomeIcon className="my-md-4" icon={faGlasses} />
     </div>
   </header>
 )
